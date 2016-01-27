@@ -1,0 +1,15 @@
+<div class="box">
+    <h2>Edit profile</h2>
+    <p>
+        <label for="username">Username:</label>
+        <input type="text" id="username" ng-model="userData.username" required />
+    </p>
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" id="password" ng-model="userData.password" required />
+    </p>
+    <p>
+        <a ng-click="editProfile(userData)" class="button">Edit</a>
+        <a href="#/" class="link">Cancel</a>
+    <p>
+</div>

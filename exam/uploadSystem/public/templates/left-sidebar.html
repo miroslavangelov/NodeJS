@@ -1,0 +1,18 @@
+<h2>Navigation</h2>
+<div ng-if="authService.isAnonymous()">
+    <ul class="sidebar-menu">
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/login">Login</a></li>
+        <li><a href="#/register">Register</a></li>
+        <li><a href="#/all-files">All public files</a></li>
+    </ul>
+</div>
+<div ng-if="authService.isLoggedIn()">
+    <ul class="sidebar-menu">
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/edit/profile">Edit Profile</a></li>
+        <li><a href="#/upload">Upload file</a></li>
+        <li><a href="#/all-files">All public files</a></li>
+        <li><a href="#/user-files">User files</a></li>
+    </ul>
+</div>

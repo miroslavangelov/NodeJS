@@ -1,0 +1,21 @@
+<div class="box">
+    <h2>All files</h2>
+    <ul>
+        <li ng-repeat="file in filesData" class="box">
+            <p>
+                Filename: {{file.fileName}}
+            </p>
+            <p>
+                Date of uploading: {{file.uploadingDate | date:'dd-MMM-yyyy'}}
+            </p>
+            <p>
+                Private: {{file.isPrivate}}
+            <p>
+            <p>
+                Uploaded by: {{file.createdBy}}
+            <p>
+        </li>
+
+    </ul>
+
+</div>

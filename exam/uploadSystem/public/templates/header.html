@@ -1,0 +1,10 @@
+<div ng-if="authService.isAnonymous()">
+    <span>Ads</span>
+</div>
+<div ng-if="authService.isNormalUser()">
+    <span>Ads</span>
+    <div class="user-area">
+        <span>{{authService.getCurrentUser().username}}</span>
+        <a ng-click="logout()" class="link">Logout</a>
+    </div>
+</div>

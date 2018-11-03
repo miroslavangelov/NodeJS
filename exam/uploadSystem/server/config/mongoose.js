@@ -10,7 +10,7 @@ module.exports = function(config) {
             console.log(err);
             return;
         }
-        console.log("db running fucker");
+        console.log("db running");
     });
     db.on("error", function(err) {
         console.log(err);
